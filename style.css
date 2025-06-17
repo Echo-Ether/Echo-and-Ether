@@ -1,61 +1,59 @@
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Georgia', serif;
-  background-image: url('images/feather.jpg');
+  background-image: url('feather.jpg');
   background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #2e2e2e;
+  background-color: #0e1a2b;
+  color: #f2e9dc;
+  margin: 0;
+  padding: 20px;
 }
 
 header {
   text-align: center;
-  padding: 60px 20px 30px;
-  animation: softPulse 3s infinite;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #f6d365;
 }
 
 .tagline {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #4a148c;
+  color: #d4af37;
+  font-size: 1.1em;
 }
 
-.subtitle {
-  font-size: 1.2rem;
-  color: #6a1b9a;
-  margin-top: 10px;
+.offering {
+  margin: 20px auto;
+  max-width: 600px;
 }
 
-main {
-  padding: 40px 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  max-width: 800px;
-  margin: auto;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}
-
-/* Collapsible Styling */
-details {
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  padding: 12px;
-  background: #fefefe;
-}
-
-summary {
-  font-weight: bold;
+.collapsible {
+  background-color: #1c2d4a;
+  color: #f2e9dc;
   cursor: pointer;
-  font-size: 1.2rem;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.1em;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
 }
 
-/* Animation */
-@keyframes softPulse {
-  0% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.9; transform: scale(1.01); }
-  100% { opacity: 1; transform: scale(1); }
+.collapsible:hover {
+  background-color: #2d3e5e;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #21314d;
+  border-radius: 0 0 6px 6px;
+  margin-bottom: 10px;
 }
