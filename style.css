@@ -1,28 +1,43 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
 body {
-  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 20px;
+  font-family: 'Playfair Display', serif;
+  background-color: #0e1a2b;
   background-image: url('feather.jpg');
   background-size: cover;
   background-attachment: fixed;
-  background-color: #0e1a2b;
+  background-position: center;
   color: #f2e9dc;
-  margin: 0;
-  padding: 20px;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(14, 26, 43, 0.6);
+  z-index: -1;
 }
 
 header {
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
-h1 {
-  font-size: 2.5em;
+h1.blinking-title {
+  font-size: 3em;
   color: #f6d365;
+  animation: pulse 2.5s infinite ease-in-out;
 }
 
 .tagline {
   color: #d4af37;
   font-size: 1.1em;
+  margin-top: -10px;
 }
 
 .offering {
@@ -38,7 +53,6 @@ h1 {
   width: 100%;
   border: none;
   text-align: left;
-  outline: none;
   font-size: 1.1em;
   border-radius: 6px;
   margin-top: 10px;
@@ -56,4 +70,10 @@ h1 {
   background-color: #21314d;
   border-radius: 0 0 6px 6px;
   margin-bottom: 10px;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
 }
