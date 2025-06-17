@@ -109,3 +109,34 @@ nav {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-5px); }
 }
+
+
+
+.collapsible {
+  background: none;
+  color: #f2e9dc;
+  cursor: pointer;
+  padding: 14px 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.collapsible:hover {
+  transform: scale(1.02);
+  text-shadow: 0 0 8px rgba(242, 233, 220, 0.4);
+}
+
+.content {
+  padding: 0 20px 20px;
+  display: none;
+  overflow: hidden;
+  font-family: 'Playfair Display', serif;
+  color: #f2e9dc;
+  font-size: 16px;
+  line-height: 1.6;
+}
